@@ -16,6 +16,7 @@ $ cd ~/argos-dev_profile
 $ git tag -l
 v1.0.0
 v1.0.1
+[checkout the latest tag]
 $ git checkout tags/v1.0.1
 Note: checking out 'tags/v1.0.1
 [...git status messages...]
