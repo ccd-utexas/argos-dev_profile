@@ -3,7 +3,7 @@ argos-dev_profile
 
 Environment for argos-dev computers.
 
-Example usage:
+Example first-time download:
 ```
 $ cd ~
 $ git clone https://github.com/ccd-utexas/argos-dev_profile
@@ -24,4 +24,15 @@ $ cp ~/argos-dev_profile/.profile ~/.
 $ source ~/.profile
 ```
 
-Note: This respository must be kept private since .profile has aliased commands for accessing Lonestar. The commands identify the ccd account.
+Example update:
+```
+$ cd ~/argos-dev_profile
+$ git pull
+Username for 'https://github.com': ccd.utexas@gmail.com
+Password for 'https://ccd.utexas@gmail.com@github.com':
+[see stache.security.utexas.edu for password]
+[...git status messages...]
+[Then proceed as above for checking out the latest tag.]
+```
+
+**Note:** This respository must be kept private since .profile has aliased commands for accessing Lonestar. The commands identify the ccd account.
