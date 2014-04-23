@@ -1,6 +1,6 @@
 # Set aliases to sync data and copy preferences and logs
 alias sync_Data_to_White_Dwarf_Archive='rsync -Pavz --chmod=u+rwx,g+rwx,o-rwx /D/sync_to_White_Dwarf_Archive/ ccd@lonestar.tacc.utexas.edu:/corral-repl/utexas/White_Dwarf_Archive/ProEM_1024B/'
-alias sync_Disk_Image_Backups_to_White_Dwarf_Archive='rsync -Pavz --chmod=u+rwx,g+rwx,o-rwx /E/Disk_Image_Backups ccd@lonestar.tacc.utexas.edu:/corral-repl/utexas/White_Dwarf_Archive/Disk_Image_Backups/'
+alias sync_Disk_Image_Backups_to_White_Dwarf_Archive='rsync -Pavz --chmod=u+rwx,g+rwx,o-rwx /E/Disk_Image_Backups/ ccd@lonestar.tacc.utexas.edu:/corral-repl/utexas/White_Dwarf_Archive/Disk_Image_Backups/'
 alias copy_acquisition_control_preferences_to_puokonui='cp -i preferences.dat /src/puokonui/.'
 alias copy_acquisition_control_preferences_to_here='cp -i /src/puokonui/preferences.dat .'
 alias copy_observing_log_template_for_puokonui_to_here='cp -i /C/Users/admin/Google\ Drive/argosdev.utexas/Observing_Log_Templates/Observing_Log_Template_for_Puoko-nui.log .'
