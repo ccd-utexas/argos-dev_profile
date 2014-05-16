@@ -8,13 +8,18 @@ alias copy_acquisition_control_log_to_here='cp -i /src/puokonui/logs/$(ls -t /sr
 alias set_acquistion_control_preferences_to_default='cp -i /src/puokonui/preferences_default.dat /src/puokonui/preferences.dat'
 
 # Set paths for executables
-PATH=$PATH:/C/MinGW/32/bin
-PATH=$PATH:/C/"Program Files (x86)"/Git/bin
-PATH=$PATH:/C/ds9
-PATH=$PATH:/src/tsreduce
+PATH=$PATH:'/C/MinGW/32/bin'
+PATH=$PATH:'/C/Program Files (x86)/Git/bin'
+PATH=$PATH:'/C/ds9'
+PATH=$PATH:'/src/tsreduce'
 export PATH
-export PGPLOT_DIR=/local/share/pgplot
-export PGPLOT_FONT=/local/share/pgplot/grfont.dat
+export PGPLOT_DIR='/local/share/pgplot'
+export PGPLOT_FONT='/local/share/pgplot/grfont.dat'
+
+# Set variables for pyds9
+export XPA_METHOD='localhost'
+export XPA_VERBOSITY=100
+export XPA_NSUSERS='*'
 
 # Change to the data directory
 cd /D/
