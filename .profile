@@ -1,6 +1,8 @@
 # Set aliases to sync data and copy preferences and logs
-alias sync_Data_to_White_Dwarf_Archive='rsync -Pavz --chmod=u+rwx,g+rwx,o-rwx /D/sync_to_White_Dwarf_Archive/ ccd@lonestar.tacc.utexas.edu:/corral-repl/utexas/White_Dwarf_Archive/ProEM_1024B/'
-alias sync_Disk_Image_Backups_to_White_Dwarf_Archive='rsync -Pavz --chmod=u+rwx,g+rwx,o-rwx /E/Redo_Backup_and_Recovery/ ccd@lonestar.tacc.utexas.edu:/corral-repl/utexas/White_Dwarf_Archive/Disk_Image_Backups/Redo_Backup_and_Recovery/'
+# Do rsync twice to ensure that all file are synced.
+# Make sure that ssh keys are stored for password-less login to ccd@lonestar.tacc.utexas.edu
+alias sync_Data_to_White_Dwarf_Archive='rsync -Pavz --chmod=u+rwx,g+rwx,o-rwx /D/sync_to_White_Dwarf_Archive/ ccd@lonestar.tacc.utexas.edu:/corral-repl/utexas/White_Dwarf_Archive/ProEM_1024B/ ; rsync -Pavz --chmod=u+rwx,g+rwx,o-rwx /D/sync_to_White_Dwarf_Archive/ ccd@lonestar.tacc.utexas.edu:/corral-repl/utexas/White_Dwarf_Archive/ProEM_1024B/'
+alias sync_Disk_Image_Backups_to_White_Dwarf_Archive='rsync -Pavz --chmod=u+rwx,g+rwx,o-rwx /E/Redo_Backup_and_Recovery/ ccd@lonestar.tacc.utexas.edu:/corral-repl/utexas/White_Dwarf_Archive/Disk_Image_Backups/Redo_Backup_and_Recovery/ ; rsync -Pavz --chmod=u+rwx,g+rwx,o-rwx /E/Redo_Backup_and_Recovery/ ccd@lonestar.tacc.utexas.edu:/corral-repl/utexas/White_Dwarf_Archive/Disk_Image_Backups/Redo_Backup_and_Recovery/'
 alias copy_acquisition_control_preferences_to_puokonui='cp -i preferences.dat /src/puokonui/.'
 alias copy_acquisition_control_preferences_to_here='cp -i /src/puokonui/preferences.dat .'
 alias copy_observing_log_template_for_puokonui_to_here='cp -i /C/Users/admin/Google\ Drive/argosdev.utexas/Observing_Log_Templates/Observing_Log_Template_for_Puoko-nui.log .'
