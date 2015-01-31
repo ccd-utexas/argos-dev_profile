@@ -11,16 +11,12 @@ Example:
 $ cd ~
 $ git clone https://github.com/ccd-utexas/argos-dev_profile.git
 Cloning into 'argos-dev_profile'...
-Username for 'https://github.com': ccd.utexas@gmail.com
-Password for 'https://ccd.utexas@gmail.com@github.com':
-[see stache.security.utexas.edu for password]
 [...git status messages...]
 $ cd ~/argos-dev_profile
 $ git tag -l
 v1.0.0
 v1.0.1
-[checkout the latest tag]
-$ git checkout tags/v1.0.1
+$ git checkout tags/v1.0.1 # checkout the latest tag
 Note: checking out 'tags/v1.0.1
 [...git status messages...]
 $ cp ~/argos-dev_profile/.profile ~/.
@@ -32,8 +28,6 @@ To update, rename the local repository as a backup with a date stamp (just in ca
 Example update:
 ```
 $ cd ~
-[Make a backup of the local repository with a date stamp.]
-$ mv argos-dev_profile argos-dev_profile_BACKUP_YYYYMMDD
-$ git clone https://github.com/ccd-utexas/argos-dev_profile.git
-[Proceed as in above example.]
+$ mv argos-dev_profile argos-dev_profile_BACKUP_YYYYMMDDTHHMMSS # backup with a datestamp
+$ git clone https://github.com/ccd-utexas/argos-dev_profile.git # then proceed as above
 ```
