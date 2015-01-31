@@ -4,7 +4,7 @@ Unix environment for argos-dev computers.
 
 ## Example setup
 
-Clone the remote repository, checkout the latest tagged release, copy the .profile startup file to the home directory, then source .profile to change the environment.
+Clone the remote repository, checkout the latest tagged release, copy the .profile startup file to the home directory, then ```source .profile``` to change the environment.
 
 Example:
 ```
@@ -37,5 +37,3 @@ $ mv argos-dev_profile argos-dev_profile_BACKUP_YYYYMMDD
 $ git clone https://github.com/ccd-utexas/argos-dev_profile.git
 [Proceed as in above example.]
 ```
-
-**Note:** This respository must be kept private since .profile has aliased commands for accessing Lonestar. The commands identify the ccd account.
