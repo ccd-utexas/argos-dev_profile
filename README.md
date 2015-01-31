@@ -1,6 +1,6 @@
 # argos-dev_profile
 
-Environment for argos-dev computers.
+Unix environment for argos-dev computers.
 
 ## Example setup
 
